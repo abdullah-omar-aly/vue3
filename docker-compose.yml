@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: abdullah0mar/vue3:1.0.4
+    ports:
+      - 8070:80
