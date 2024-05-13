@@ -18,5 +18,8 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Image build
+      - name: Build an image
         run: docker compose build
+
+      - name: Push to docker hub
+        run: docker push

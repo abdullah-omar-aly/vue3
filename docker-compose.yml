@@ -4,6 +4,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: abdullah0mar/vue3:1.0.4
+    image: abdullah0mar/vue3:1.0.5
     ports:
       - 8070:80
